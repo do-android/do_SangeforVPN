@@ -1,0 +1,10 @@
+*.class
+*.apk
+bin/
+gen/
+.settings/
+proguard/
+*.classpath
+/doExt_do_SangforVPN/libs/docore.jar
+/doExt_do_SangforVPN/do_build.xml
+/doExt_do_SangforVPN/do_SangforVPN.zip

@@ -1,0 +1,83 @@
+{
+  "ID": "do_SangforVPN",
+  "IsContainer": "0",
+  "Type": "SM",
+  "Name": "SangforVPN",
+  "Version": "Internal",
+  "Description": "ʹ�����ŷ��Ƽ���˾�ṩ��VPN������ʷ�������Դ���ṩVPN��¼��VPNע����¼�Ĺ���",
+  "Icon": "",
+  "IOS": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Android": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Windows": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "WindowsPhone": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [],
+  "Events": [],
+  "syncMethodes": [],
+  "asyncMethodes": [
+    {
+      "ID": "login",
+      "Name": "��¼VPN",
+      "Description": "��¼VPN",
+      "ReturnType": "Node",
+      "ReturnDesc": "{\"result\":\"true ��¼�ɹ���false ��¼ʧ��\",\"code\":\"0\",\"msg\":\"\"}",
+      "Paras": [
+        {
+          "ID": "host",
+          "Name": "��ַ",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "����VPN��ַ"
+        },
+        {
+          "ID": "username",
+          "Name": "�û���",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "��¼VPN���û���"
+        },
+        {
+          "ID": "password",
+          "Name": "����",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "��¼VPN������"
+        },
+        {
+          "ID": "port",
+          "Name": "�˿ں�",
+          "Type": "Number",
+          "Required": 0,
+          "DefaultValue": "443",
+          "Description": "����VPN�˿�"
+        }
+      ]
+    },
+    {
+      "ID": "logout",
+      "Name": "ע��VPN",
+      "Description": "ע���˳�VPN",
+      "ReturnType": "Node",
+      "ReturnDesc": "{\"result\":\"true ע���ɹ���false ע��ʧ��\",\"code\":\"0\",\"msg\":\"\"}",
+      "Paras": []
+    }
+  ]
+}
